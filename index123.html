@@ -268,7 +268,7 @@
                 </div>
             </div>
           </li>
-<!--           <li data-transition="random" data-slotamount="7" data-masterspeed="2000" >
+          <li data-transition="random" data-slotamount="7" data-masterspeed="2000" >
             <img src="assets/images/slider.jpg"  alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
             <div class="tp-caption sfr"
               data-x="right"
@@ -288,7 +288,10 @@
                   </div>
                   <div class="timer">
                     <form action="#" class="caption__form js_validate">
-                      <div class="form-gr"><input type="tel" placeholder="Ваш телефон" required data-validate="phone"></div>
+                      <div class="form-gr input-box input-black">
+                        <input type="tel" id="tl1" required data-validate="phone" class="input-anim">
+                        <label for="tl1">Ваш телефон*</label>
+                      </div>
                       <button type="submit" class="butt" data-toggle="modal" data-target="#complite">
                         <span>Узнать подробнее</span>
                         <span>Узнать подробнее</span>
@@ -297,7 +300,7 @@
                   </div>
                 </div>
             </div>
-          </li> -->
+          </li>
         </ul>
       </div>
     </section>
@@ -378,7 +381,7 @@
         <div class="bq-dir">
           Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.  Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
         </div>
-        <a href="#" class="butt butt-grey">
+        <a href="#" data-toggle="modal" data-target="#write_d" class="butt butt-grey">
           <span>Написать директору</span>
           <span>Написать директору</span>
         </a>
@@ -692,10 +695,10 @@
                   <button type="submit" data-toggle="modal" data-target="#complite"><span class="icon-send-letter"></span></button>
                 </form>
                 <ul class="social">
-                  <li><a href="#"><span class="icon-fb"></span></a></li>
-                  <li><a href="#"><span class="icon-vk"></span></a></li>
-                  <li><a href="#"><span class="icon-google"></span></a></li>
-                  <li><a href="#"><span class="icon-youtube"></span></a></li>
+                  <li><a href="#" target="_blank"><span class="icon-fb"></span></a></li>
+                  <li><a href="#" target="_blank"><span class="icon-vk"></span></a></li>
+                  <li><a href="#" target="_blank"><span class="icon-google"></span></a></li>
+                  <li><a href="#" target="_blank"><span class="icon-youtube"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -743,7 +746,7 @@
                   <li>пн-пт:  <span>8.30 - 20.00</span></li>
                   <li>сб: <span>10.00 - 16.00</span></li>
                 </ul>
-                <a href="#" class="wrt-link"><span class="icon-mail"></span>напишите нам</a>
+                <a href="#" data-toggle="modal" data-target="#call" class="wrt-link"><span class="icon-mail"></span>напишите нам</a>
               </div>
             </div>
           </div>
@@ -752,10 +755,10 @@
           <div class="col-lg-10 col-lg-offset-1 ctr-cont">
             <div class="footer-holder">
               <div class="col-md-6 col-xs-12 text-left">
-                © 2008 - 2015 Газда Металлопластиковые окна
+                © 2008 - 2016 Газда Металлопластиковые окна
               </div>
               <div class="col-md-6 col-xs-12 text-right">
-                Разработка и поддержка сайтов - <a href="artjoker.ua" target="_blank">Artjoker</a>
+                Разработка и поддержка сайтов - <a href="http://artjoker.ua" target="_blank">Artjoker</a>
               </div>
             </div>
           </div>
@@ -811,6 +814,35 @@
                 <div class="input-box input-black">
                   <input type="tel" required="" id="phone-call" class="input-anim" data-validate="phone">
                   <label for="phone-call">Телефон*</label>
+                </div>
+                <button type="submit" class="butt butt-grey" data-toggle="modal" data-target="#complite">
+                  <span>отправить</span>
+                  <span>отправить</span>
+                </button>
+              </form>
+              <div class="info-modal">Нажмите <b>Enter</b> для отправки запроса, нажмите <b>ESC</b> для выхода. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="write_d" class="modal fade" aria-hidden="true">
+        <button type="button" class="close-search close-modal" data-dismiss="modal" aria-hidden="true">закрыть</button>
+        <div class="modal-dialog">
+          <div class="modal-content text-center">
+            <div class="modal-body clearfix">
+              <div class="head-modal">Написать директору</div>
+              <form action="#" class="js_validate">
+                <div class="input-box input-black">
+                  <input type="text" required="" id="name-write" class="input-anim">
+                  <label for="name-write">Имя*</label>
+                </div>
+                <div class="input-box input-black">
+                  <input type="tel" required="" id="phone-write" class="input-anim" data-validate="phone">
+                  <label for="phone-write">Телефон*</label>
+                </div>
+                <div class="input-box input-box--area input-black">
+                  <textarea required="" id="text-write" class="input-anim"></textarea>
+                  <label for="text-write">Сообщение*</label>
                 </div>
                 <button type="submit" class="butt butt-grey" data-toggle="modal" data-target="#complite">
                   <span>отправить</span>

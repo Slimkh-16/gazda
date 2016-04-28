@@ -1002,6 +1002,7 @@ a.laung-it:hover {
   color: #fff;
   text-align: center;
   line-height: 100px;
+  top: 50% !important;
 }
 
 .tp-leftarrow:after {
@@ -2080,6 +2081,11 @@ a.laung-it:hover {
   margin-bottom: 35px;
 }
 
+.big-txt {
+  font-size: 30px;
+  line-height: 40px;
+}
+
 .foot-feed form {
   width: 215px;
   max-width: 100%;
@@ -2089,6 +2095,7 @@ a.laung-it:hover {
   width: 100%;
   padding: 8px 25px 8px 0;
   border: none;
+  background: #fff !important;
   border-bottom: 2px solid #8f8f8f;
 }
 .foot-feed form .input-box {
@@ -4813,6 +4820,7 @@ ul.list li:before {
 .step-ln-it:first-child {
   background: #fff;
   border-color: #ee7600;
+  border-style: solid;
   color: #ee7600;
 }
 .step-ln-it:last-child:after {
@@ -4861,6 +4869,18 @@ ul.list li:before {
 .payment {
   float: left;
   width: 100%;
+}
+
+.small-txt {
+  display: block;
+}
+
+.b {
+  font-family: 'RobotoCondensed-Bold',Arial, sans-serif;
+}
+
+.form-container .col-form:nth-child(2) input {
+  border-left: none;
 }
 
 @media screen and (min-width: 1670px) {
@@ -4967,6 +4987,10 @@ ul.list li:before {
   .post-item__txt {
     font-size: 18px;
     line-height: 21px;
+  }
+
+  .post-container--product .post-item__txt {
+    height: 169px;
   }
 
   .caption__form .butt {
@@ -5953,8 +5977,17 @@ ul.list li:before {
   .you-search {
     font-size: 26px;
   }
+
+  .form-container .col-form:nth-child(2) input {
+    border-left: 2px solid #fff;
+  }
 }
 @media screen and (max-width: 767px) {
+  .big-txt {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
   .profile-gr {
     display: none;
   }

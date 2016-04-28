@@ -40,15 +40,6 @@ function testi() {
       }
     }
 }
-// var butt_tst = document.querySelectorAll('.js_more');
-// var j = 0;
-// butt_tst[j].onclick = function() {
-//   console.log(butt_tst[j])
-//   for (var j = 0; j < butt_tst.length; ++j) {
-//       butt_tst[j].previousElementSibling.classList.add('full-tst');
-//       this.style.display = "none";
-//     }
-// }
 // testimonials
 window.onresize = function() {
   if(window.outerWidth > 992) {
@@ -367,7 +358,7 @@ $(document).ready(function() {
   });
   // slider revolution
   if($.browser.mozilla){
-    if($.browser.version > '30'){
+    if($.browser.version < '30'){
       alert('Обновите брaузер')
     }
   }

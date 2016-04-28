@@ -530,6 +530,7 @@ a.laung-it:hover {color: #fff;background: #949494;}
   color: #fff;
   text-align: center;
   line-height: 100px;
+  top: 50% !important;
 }
 .tp-leftarrow:after {content: '\e904';}
 .tp-rightarrow:after {content: '\e90d';}
@@ -1310,6 +1311,10 @@ a.laung-it:hover {color: #fff;background: #949494;}
   max-width: 100%;
   margin-bottom: 35px;
 }
+.big-txt {
+  font-size: 30px;
+  line-height: 40px;
+}
 // .container-fluide {padding-left: 15px;padding-right: 15px;}
 .foot-feed form {
   width: 215px;
@@ -1319,6 +1324,7 @@ a.laung-it:hover {color: #fff;background: #949494;}
     width: 100%;
     padding: 8px 25px 8px 0;
     border:none;
+    background: #fff !important;
     border-bottom: 2px solid #8f8f8f;
   }
   .input-box {margin-top: 15px;}
@@ -3292,6 +3298,7 @@ ul.list {
   &:first-child {
     background: #fff;
     border-color:$th;
+    border-style:solid;
     color: $th;
   }
   &:last-child:after {display: none;}
@@ -3318,6 +3325,9 @@ ul.list {
 .production-box--nopad {padding-top: 0;}
 .sertificate {padding-bottom: 20px;}
 .payment {float: left;width: 100%;}
+.small-txt {display: block;}
+.b {@include fb;}
+.form-container .col-form:nth-child(2) input {border-left:none;}
 // responsive
 @media screen and (min-width: 1670px) {
   .container {width: 1630px;}
@@ -3356,6 +3366,7 @@ ul.list {
   .nav-item__inf {font-size: 18px;line-height: 24px;}
   .nav-item__head {font-size: 28px;}
   .post-item__txt {font-size: 18px;line-height: 21px;}
+  .post-container--product .post-item__txt {height: 169px;}
   .caption__form { .butt {height: 40px;}}
   .box-item-left img {
     max-width: 40%;
@@ -3611,11 +3622,13 @@ ul.list {
   .price-item {width: 100%;margin: 0 0 30px;}
   .price-item__img {height: auto;line-height: inherit;}
   .you-search {font-size: 26px;}
+  .form-container .col-form:nth-child(2) input {border-left:2px solid #fff;} 
 }
 @media screen and (max-width: 850px){
   
 }
 @media screen and (max-width: 767px){
+  .big-txt {font-size: 24px;line-height: 30px;}
   .profile-gr {display: none;}
   .widow-char--full .list-cust li {width: 100%;}
   .list-cust li {text-align: left;}
