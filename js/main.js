@@ -278,12 +278,21 @@ var swiper = new Swiper('.slider-pr', {
 });
 // swiper slider
 // header stick
+var offTopheader = document.querySelector('.bottom-header').offsetTop,
+    heightHeaderB = document.querySelector('.bottom-header').clientHeight;
 window.onscroll = function() {
   var bodyTop = document.body.scrollTop;
   if(bodyTop > 400) {
     document.querySelector('.mobile-header').classList.add('visible');
   } else {
     document.querySelector('.mobile-header').classList.remove('visible');
+  }
+  if(bodyTop > offTopheader && window.innerWidth > 992) {
+    document.querySelector('.bottom-header').classList.add('fix');
+    document.getElementById('wrapper').style.paddingTop = heightHeaderB + 'px'
+  } else {
+    document.querySelector('.bottom-header').classList.remove('fix');
+    document.getElementById('wrapper').style.paddingTop = 0;
   }
   if(bodyTop > 800) {
     document.querySelector('.js_to_top').classList.add('visible');
