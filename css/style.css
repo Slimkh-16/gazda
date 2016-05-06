@@ -5895,6 +5895,10 @@ ul.list li:before {
   }
 }
 @media screen and (max-width: 992px) {
+  .contact-box__head {
+    font-size: 18px;
+  }
+
   .add-test form {
     max-width: 100%;
   }

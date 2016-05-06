@@ -223,6 +223,7 @@ var swiper = new Swiper('.arcticle-slider-news', {
 var swiper = new Swiper('.sertificat-slider', {
     slidesPerView: 5,
     spaceBetween: 40,
+    loop: true,
     breakpoints: {
        1300: {
            slidesPerView: 4,
@@ -241,7 +242,6 @@ var swiper = new Swiper('.sertificat-slider', {
            spaceBetween: 0
        }
     },
-    loop: false,
     nextButton: '.sertificat-slider-next',
     prevButton: '.sertificat-slider-prev',
 });
