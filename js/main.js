@@ -8,12 +8,12 @@ window.onload = function() {
     document.querySelector('.preloader-container').style.display = "none"
   },3500);
   // testi();
-  if(window.outerWidth > 992) {
+  if(window.innerWidth > 992) {
     heightEL();
     heightBox();
     heighSh();
   }
-  if(window.outerWidth > 767) {
+  if(window.innerWidth > 767) {
     heightTable(); 
   }
   // header stick

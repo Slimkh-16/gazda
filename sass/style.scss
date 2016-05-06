@@ -283,7 +283,7 @@ a.laung-it:hover {color: #fff;background: #949494;}
     text-align: center;
     li {
       display: inline-block;
-      margin: 0 45px;
+      margin: 0 42px;
       a,span {
         padding:13px 0;
         display: inline-block;
@@ -514,7 +514,7 @@ a.laung-it:hover {color: #fff;background: #949494;}
     width: 230px;
     border:none;
     height: 58px;
-    line-height: 0px;
+    line-height: 58px;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -3033,7 +3033,7 @@ ul.list {
 }
 .left-pr-inf {
   float: left;
-  width: 40%;
+  width: 38%;
   padding: 0 15px 0 0;
 }
 .right-pr-inf {
@@ -3408,6 +3408,12 @@ ul.list {
   width: 100%;
   z-index: 444;
 }
+.modal-open {
+  overflow: hidden !important;
+  height: 100vh;
+}
+.modal {height: 100vh;max-height:100vh ;}
+.visible-mob-phone {display: none;}
 // responsive
 @media screen and (min-width: 1670px) {
   .container {width: 1630px;}
@@ -3416,6 +3422,12 @@ ul.list {
 @media screen and (max-width: 1800px){
   .price-tab-nav .butt-tab {font-size: 18px;}
   .ctr-cont {width: 100%;margin: 0;float: left;}
+  .price-info {
+    .ctr-cont {
+          margin-left: 8.33333333%;
+              width: 83.33333333%;
+    }
+  }
   .add-test {
     form {
       max-width: 80%;
@@ -3479,7 +3491,7 @@ ul.list {
 }
 @media screen and (max-width: 1400px){
   .box-item-right {padding-top: 30px;}
-  .box-item-left {padding-top: 60px;padding-bottom: 60px;}
+  .box-item-left {padding-top: 30px;padding-bottom: 30px;}
   .box-item-right__head {font-size: 30px;margin-bottom: 15px;}
   .video-caption {font-size: 36px;line-height: 44px;}
   .price-item {
@@ -3510,21 +3522,22 @@ ul.list {
   .center-header {padding-bottom: 24px;}
   .profile-gr__it {margin-bottom: 15px;}
   .logo {
-    width: 200px;
+    width: 280px;
     margin-top: 13px;
-    margin-right: 80px;
+    margin-right: 5px;
+    img {margin: 0 auto;max-width: 200px;}
   }
   .capt-t b {margin-bottom: 5px;font-size: 32px;line-height: 36px;}
   .capt-t:after {margin-top: 15px;margin-bottom: 15px;}
   .list-head {font-size: 26px;}
   .caption__form button {margin-top: 15px;}
-  .bottom-header ul li  {margin: 0 15px;}
+  .bottom-header ul li  {margin: 0 20px;}
   .bottom-header ul li a, .bottom-header ul li span {font-size: 16px;padding: 9px 0;}
   .post-item__head {font-size: 22px;line-height: 26px;}
   .post-item__txt {font-size: 16px;}
   .see-more a {padding: 20px 0;}
   .bq-dir {font-size: 16px;line-height: 22px;}
-  .form-container__head {font-size: 36px;line-height: 44px;}
+  .form-container__head,.news-one .form-container__head {font-size: 30px;line-height: 40px;margin-bottom: 20px;}
   .form-container__head span {font-size: 32px;}
   .form-container {padding: 30px 0 40px;}
   .box-item-left {padding-left: 30px;padding-right: 30px;}
@@ -3537,7 +3550,8 @@ ul.list {
   }
   .name-gal {font-size: 26px;line-height: 32px;}
   .product-top__inf {padding-left: 30px;padding-right: 30px;}
-  ul.list li {font-size: 16px;}
+  ul.list li {font-size: 16px;line-height: 22px;margin-bottom: 5px;}
+  .right-pr-inf ul li {margin-bottom: 5px;}
   .widow-top__img {width: 40%;}
   .widow-top__info {width: 60%;}
   .widow-char {padding: 20px 15px;}
@@ -3548,15 +3562,13 @@ ul.list {
   .window-info {font-size: 18px;}
   .profile-box__info b {font-size: 22px;}
   .profile-box__info {font-size: 16px;line-height: 22px;}
-  .window-work-box {width: 1020px;}
-  .window-work__item:nth-child(3):before,
-  .window-work__item:nth-child(6):before {
+  .window-work-box {width: 1140px;}
+  .window-work__item:nth-child(4):before {
     background-image: url('../images/icons/line.png');
     height: 2px;
     background-position: 0 0;
     width: 29px;}
-  .window-work__item:nth-child(4):after,
-  .window-work__item:nth-child(7):after {
+  .window-work__item:nth-child(5):after{
       background-image: url('../images/icons/line-prev.png');
       // background-position: 0 -680px;
       background-position: 0 0;
@@ -3608,10 +3620,30 @@ ul.list {
   .news-name {font-size: 20px;}
   .big-txt {font-size: 22px;line-height: 30px;}
   .pr-char {width: 55%;}
-
+  .box-item__head {font-size: 20px;line-height: 26px;}
+  .bq {padding-top: 35px;}
+  .bq .butt {margin-top: 25px;}
+  .add-test .input-black textarea {height: 150px;}
+  .add-test {
+    padding: 30px 0 35px;
+  }
 } 
 @media screen and (max-width: 1220px){
 
+  .window-work__item:nth-child(3):before,
+  .window-work__item:nth-child(6):before {
+    background-image: url('../images/icons/line.png');
+    height: 2px;
+    background-position: 0 0;
+    width: 29px;}
+  .window-work__item:nth-child(4):after,
+  .window-work__item:nth-child(7):after {
+      background-image: url('../images/icons/line-prev.png');
+      // background-position: 0 -680px;
+      background-position: 0 0;
+      height: 10px;
+      width: 45px;}
+  .price-info .ctr-cont {width: 100%;margin: 0;}
      
   .derek-info {
     bottom: auto;
@@ -3631,6 +3663,10 @@ ul.list {
   .logo {max-width: 200px;margin-right: 40px;}
   .price-tab-nav ul {text-align: center;}
   .left-pr-inf,.right-pr-inf,.price-info:before  {width: 100%;}
+  .right-pr-inf {
+    padding-left: 15px;
+    // text-align: center;
+  }
   .left-pr-inf {
     text-align: center;
     padding-left: 15px;
@@ -3707,6 +3743,7 @@ ul.list {
 }
 @media screen and (max-width: 992px){
   .add-test form{max-width: 100%;}
+  .phone-box__drop {min-width: 195px;}
   .production .post-item__txt {max-height: 198px;}
   .box-txt big {font-size: 22px;}
   .step-ln-it {width: 40px;height: 40px;line-height: 36px;font-size: 18px;margin-right: 30px;
@@ -3715,9 +3752,10 @@ ul.list {
       right: -32px;
     } 
   }
-  .bottom-header.fix,.bottom-header {
+  .bottom-header.fix{
     position: static !important;
   }
+  .bottom-header  {position: relative !important;}
   .search-name {font-size: 24px;line-height: 28px;}
   .news-img,.news-info {width: 100%;display: block;}
   .payment-item {width: 100%;margin-bottom: 10px;}
@@ -3740,7 +3778,7 @@ ul.list {
   .mm-navbar-top-2 {top: 0;}
   .mm-hasnavbar-top-2 .mm-panels {top: 40px;}
   .mm-listview .mm-divider, .mm-listview>li>a, .mm-listview>li>span, .mm-navbar .mm-title {text-transform: uppercase;}
-  .caption__form, .director {display: none;}
+  .caption__form {display: none;}
   .mobile-header {display: block;&.visible {opacity: 1;visibility: visible;}}
   .nav-item__img {display: none;}
   .nav-item__link {padding: 15px;}
@@ -3814,6 +3852,9 @@ ul.list {
   .you-search {font-size: 26px;}
   .form-container .col-form:nth-child(2) input {border-left:2px solid #fff;} 
   .nav-item__holder .go-to-cat {left: 15px;}
+  .derek {top: 95px;}
+  .derek-info {top: 15px;}
+  .derek-name:before {margin-bottom: 15px;}
 }
 @media screen and (max-width: 850px){
   
@@ -3936,12 +3977,16 @@ ul.list {
   .widow-char {text-align: center;}
 }
 @media screen and (max-width: 599px){
+  .label-car {text-align: left;}
+  .visible-mob-phone {display: block;}
+  .phone-box__drop {min-width: 180px;}
+  .phone-box__drop a {padding-left: 30px;}
   .search-name {font-size: 20px;line-height: 24px;}
   body {font-size: 16px;line-height: 24px;}
   .video-caption {font-size: 16px;line-height: 20px;}
   .box-txt {font-size: 16px;line-height: 24px;}
   .play-butt {font-size: 40px;}
-  .phone-box__drop {left: -120px;}
+  .phone-box__drop {left: -93px;}
   .list-head {font-size: 18px;line-height: 26px;}
   .butt-header .butt-header__butt, .butt-header .calc-butt, 
   .butt-header .zamer-butt, .butt-header .call-butt   {
@@ -4037,5 +4082,20 @@ ul.list {
   .butt_menu span {height: 2px;margin-bottom: 3px;}
   .mm-opened .butt_menu span:first-child {margin-top: 7px;}
   .mm-opened .butt_menu span:last-child {margin-top: -7px;}
+  .derek {display: none;}
+  .director-right {
+    width: 100%;
+    position: static;
+    @include transform(none);
+  }
+  .director-left {
+    width: 100% ;
+    position: static;
+    height: auto;
+  }
+  .derek-info {position: static;text-align: center;max-width: 100%;}
+  .derek-name:before {display: none;}
+  .director-right {padding: 0 15px;padding-top: 15px;}
+  .director {height: auto;padding: 15px 0;}
 }
 // responsive
