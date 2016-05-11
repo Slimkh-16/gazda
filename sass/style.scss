@@ -543,7 +543,7 @@ a.laung-it:hover {color: #fff;background: #949494;}
   float: left;
   height: inherit;
 }
-
+.nav-item__holder .go-to-cat {left: 55%;}
 .post-item__img {
   width: 100%;
   float: left;
@@ -825,7 +825,7 @@ a.laung-it:hover {color: #fff;background: #949494;}
   background: #ececec;
   .go-to-cat {
     position: absolute;
-    left: 45%;
+    left: 55%;
     bottom: 30px;
   }
 }
@@ -2977,10 +2977,10 @@ ul.list {
   margin-bottom: 25px;
 }
 .price-item {
-  max-width: 100%;
+  max-width: 23%;
   display: inline-block;
   vertical-align: top;
-  margin: 0 20px 25px;
+  margin: 0 0.5% 25px;
   text-align: center;
   .butt {
     width: 320px;
@@ -3538,6 +3538,7 @@ ul.list {
   .foot-col-2 {width: 45%;padding-left: 10px;}
   .foot-col-3 {width: 15%;}
   .foot-col-4 {width: 15%;}
+  .nav-item__holder .go-to-cat {left: 45%;}
 }
 @media screen and (max-width: 1700px){
   .payment-item__name {height: 94px;}
@@ -3792,6 +3793,7 @@ ul.list {
   .nav-item__holder .go-to-cat {bottom: 20px;}
   .price-item {
     width: 46%;
+    max-width: 100%;
     margin-left: 1%;
     margin-right: 1%;
   }
