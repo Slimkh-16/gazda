@@ -55,9 +55,18 @@ window.onresize = function() {
 // top navigation
 document.querySelector('.js_top_nav').onclick = function() {
   var topNav = document.querySelector('.top-nav-drop'),
-      buttNav = this;
+      buttNav = this,
+      heightDrop = document.querySelector('.top-nav-drop .column').clientHeight + 80;
   classie.toggleClass( buttNav, 'active-nav');
-  classie.toggleClass( topNav, 'active-nav');
+  if(classie.has( topNav, 'active-nav' )){
+    topNav.classList.remove('active-nav');
+    topNav.style.height = '0px';
+  }else {
+    topNav.classList.add('active-nav');
+    topNav.style.height =  heightDrop + 'px';
+  }
+  
+  // classie.toggleClass( topNav, 'active-nav');
 }
 // top navigation
 // top navigation close
@@ -66,6 +75,7 @@ document.querySelector('.js_close_top_nav').onclick = function() {
       buttNav = document.querySelector('.js_top_nav');
   buttNav.classList.remove('active-nav');
   topNav.classList.remove('active-nav');
+  topNav.style.height = '0px';
 }
 // top navigation close
 // phone drop

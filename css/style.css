@@ -227,7 +227,7 @@ body.noscroll {
 
 .top-nav-drop.active-nav {
   visibility: visible;
-  height: 295px;
+  /*height: 295px;*/
   border-width: 4px;
 }
 
@@ -1547,8 +1547,8 @@ a.laung-it:hover {
 }
 
 .form-container__head {
-  font-size: 50px;
-  line-height: 53px;
+  font-size: 42px;
+  line-height: 44px;
   margin-bottom: 10px;
   letter-spacing: -1px;
   font-family: 'RobotoCondensed-Regular',Arial, sans-serif;
@@ -1557,7 +1557,7 @@ a.laung-it:hover {
 }
 .form-container__head span {
   display: block;
-  font-size: 38px;
+  font-size: 35px;
 }
 
 .form-container form {
@@ -2589,7 +2589,7 @@ a.laung-it:hover {
   margin-top: 30px;
   width: 100%;
 }
-.input-black input, .input-black textarea {
+.input-black input, .input-black textarea, .input-black select {
   border: 2px solid #252525;
   background: transparent;
   width: 100%;
@@ -3431,9 +3431,7 @@ a.laung-it:hover {
   position: absolute;
   z-index: 50;
   top: 80px;
-  right: -webkit-calc(16.33333% + 15px);
-  right: -moz-calc(16.33333% + 15px);
-  right: calc(16.33333% + 15px);
+  right: 0;
   width: 465px;
   max-width: 100%;
   height: -webkit-calc(100% - 80px);
@@ -4130,7 +4128,7 @@ ul.list li:before {
 }
 
 .form-container--ed .form-container__head {
-  font-size: 40px;
+  font-size: 42px;
   line-height: 44px;
   margin-bottom: 30px;
 }
@@ -5033,6 +5031,18 @@ ul.list li:before {
   margin: 35px 0 0;
 }
 
+.news-one .heading-section, .gallery-one .heading-section, .usluga-one .heading-section, .window .heading-section {
+  font-size: 30px;
+}
+
+.action-tab .price-tab-nav {
+  text-align: center;
+}
+.action-tab .price-tab-nav li {
+  display: inline-block;
+  float: none;
+}
+
 @media screen and (min-width: 1670px) {
   .container {
     width: 1630px;
@@ -5381,7 +5391,7 @@ ul.list li:before {
   }
 
   .form-container__head span {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .form-container {
@@ -5864,7 +5874,7 @@ ul.list li:before {
   }
 
   .map-box {
-    right: 50px;
+    right: 0px;
     width: 350px;
   }
 
@@ -6476,6 +6486,11 @@ ul.list li:before {
     width: 49%;
   }
 }
+@media screen and (min-width: 767px) {
+  .product .heading-section {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .big-txt {
     font-size: 24px;
@@ -6800,6 +6815,11 @@ ul.list li:before {
 
   .widow-char {
     text-align: center;
+  }
+
+  .news-one .heading-section, .gallery-one .heading-section, .usluga-one .heading-section, .window .heading-section {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 @media screen and (max-width: 599px) {
